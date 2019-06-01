@@ -54,6 +54,18 @@ class HelloWorldKt {
 * 프로그램 안에 `class`가 없어도 된다.
 * `println()`함수가 내부적으로 `System.out.println()`을 call한다.
 
+<br>
+
+#### 참고
+> 코틀린에서는 println() 함수를 실행할 때 아래와같이 변수명을 String 안에서 사용할 수 있다.
+> ```kotlin
+> fun main(args : Array<String>) {
+>    val range: Byte = 112
+>    println("$range")
+> }
+>```
+
+
 <br><br>
 
 ## 2. 변수와 타입
@@ -74,17 +86,58 @@ var language: String = "French"
 val score: Int = 95
 ```
 
-> #### 참고
+#### 참고
 > 타입이 명시적으로 표현되지 않은 경우, declare와 initialize를 서로 다른 위치에서 하는 것이 허용되지 않는다.
 > ```kotlin
 > var language           // Error 
 > language = "French"
 > ```
 
+<br>
+
+### Built-in 타입들
+#### 1) Numbers
+Kotlin의 number 타입은 Java와 비슷하다.
+* `Byte`: 8-bit(1 Byte) signed two's complement integer (-128 ~ 127)
+* `Short`: 16-bit(2 Byte) signed two's complement integer (-32768 ~ 32767)
+* `Int`: 32-bit(4 Byte) signed two's complement integer
+* `Long`: 64-bit(8 Byte) signed two's complement integer
+* `Float`: a single-precision 32-bit floating point
+* `Double`: a double-precision 64-bit floating point
+
+어떤 number 타입을 사용하게 될 지 모른다면, `Number` 키워드로 타입을 명시할 수 있다.
+```kotlin
+fun main(args : Array<String>) {
+
+    var test: Number = 12.2
+    println("$test")
+
+    test = 12
+    // Int smart cast from Number
+    println("$test")
+
+    test = 120L
+    // Long smart cast from Number
+    println("$test")
+}
+```
 
 
+#### 2) Characters & String
+* `Char`: character를 다룰 때 사용된다.
+Java에서와는 달리, number로 취급될 수 없다.
+(<a href="https://www.programiz.com/java-programming/variables-primitive-data-types#char">참고</a>)
+* `String`: 문자열은 String이라는 키워드로 선언된다.
 
 
+#### 3) Booleans
+* `Boolean`: `true`나 `false`를 값으로 가질 수 있다.
+
+
+#### 4) Arrays
+* `Array`: array는 Array라는 키워드로 선언한다. (Array는 한 가지 타입의 여러 데이터를 담는 컨테이너이다)
+	- `get`과 `set` 함수가 있다.
+	- `size` property가 있다.
 
 
 
