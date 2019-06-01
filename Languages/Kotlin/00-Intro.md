@@ -57,7 +57,7 @@ class HelloWorldKt {
 <br>
 
 #### 참고
-> 코틀린에서는 println() 함수를 실행할 때 아래와같이 변수명을 String 안에서 사용할 수 있다.
+> 코틀린에서는 println() 함수를 실행할 때 (javscript언어에서처럼) 아래와 같이 변수명을 String 안에서 사용할 수 있다.
 > ```kotlin
 > fun main(args : Array<String>) {
 >    val range: Byte = 112
