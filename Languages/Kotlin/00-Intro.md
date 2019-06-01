@@ -21,7 +21,7 @@
 
 https://kotlinlang.org/docs/tutorials/getting-started-eclipse.html
 
-<br><br>
+<br><br><br>
 
 
 
@@ -66,7 +66,7 @@ class HelloWorldKt {
 >```
 
 
-<br><br>
+<br><br><br>
 
 ## 2. 변수와 타입
 코틀린에서는 변수(variable)를 선언하기 위해 `var`와 `val` 키워드가 사용된다.
@@ -86,6 +86,8 @@ var language: String = "French"
 val score: Int = 95
 ```
 
+<br>
+
 #### 참고
 > 타입이 명시적으로 표현되지 않은 경우, declare와 initialize를 서로 다른 위치에서 하는 것이 허용되지 않는다.
 > ```kotlin
@@ -93,7 +95,7 @@ val score: Int = 95
 > language = "French"
 > ```
 
-<br>
+<br><br>
 
 ### Built-in 타입들
 #### 1) Numbers
