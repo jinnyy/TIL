@@ -8,7 +8,7 @@ Today I Learned
 
 
 <br><br>
-## Additional 
+## Additional Topics
 
 - <a href="https://github.com/jinnyy/study-node.js"> Node.js </a>
 - <a href="https://github.com/jinnyy/study-kafka"> Kafka </a>
