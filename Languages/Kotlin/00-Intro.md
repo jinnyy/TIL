@@ -175,7 +175,7 @@ fun main(args : Array<String>) {
 	}
 	```
 
-* `Scanner`클래스: Scanner 객체로 다양한 함수를 통해 값을 받아올 수 있다. Java의 Scanner 클래스와 사용 방법이 유사하다.
+* `Scanner`클래스: Scanner 객체로 다양한 함수를 통해 값을 받아올 수 있다. Java의 Scanner 클래스를 import한다.
 
 	```kotlin
 	import java.util.Scanner
