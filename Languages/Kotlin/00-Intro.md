@@ -141,9 +141,62 @@ Java에서와는 달리, number로 취급될 수 없다.
 	- `get`과 `set` 함수가 있다.
 	- `size` property가 있다.
 
-
-
 <br><br><br>
+
+
+
+## 3. Input/Output
+
+### Output
+가장 간단한 output 방법은 print를 하는 것이다.
+아래와 같이 다양한 방법으로 출력을 할 수 있다.
+
+```kotlin
+fun main(args : Array<String>) {
+    val score = 12.3
+
+    println("score")
+    println("$score")
+    println("score = $score")
+    println("${score + score}")
+    println(12.3)
+}
+```
+
+### Input
+* `readLine()`: String 한 줄(개행문자 단위)을 읽어올 수 있다.
+
+	```kotlin
+	fun main(args: Array<String>) {
+	    print("Enter text: ")
+
+	    val stringInput = readLine()!!
+	    println("You entered: $stringInput")
+	}
+	```
+
+* `Scanner`클래스: Scanner 객체로 다양한 함수를 통해 값을 받아올 수 있다. Java의 Scanner 클래스와 사용 방법이 유사하다.
+
+	```kotlin
+	import java.util.Scanner
+
+	fun main(args: Array<String>) {
+
+	    // Creates an instance which takes input from standard input (keyboard)
+	    val reader = Scanner(System.`in`)
+	    print("Enter a number: ")
+
+	    // nextInt() reads the next integer from the keyboard
+	    var integer:Int = reader.nextInt()
+
+	    println("You entered: $integer")
+	}
+	```
+
+
+
+
+<br><br><br><br>
 
 ## References
 
