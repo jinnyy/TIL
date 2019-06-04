@@ -5,9 +5,11 @@ Today I Learned
 
 ## Contents
 * Languages
+  - Kotlin
 
 
-<br><br>
+<br>
+
 ## Additional Topics
 
 - <a href="https://github.com/jinnyy/study-node.js"> Node.js </a>
