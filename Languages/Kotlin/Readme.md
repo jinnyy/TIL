@@ -8,3 +8,22 @@
 
 * https://www.programiz.com/kotlin-programming 의 내용을 번역해오는 것을 기본으로 하되, Kotlin만의 새로운 특징이라고 할 수 있는 부분을 중점적으로 다루고자 합니다.
 * (특히) Java 언어와 비교를 하면서 이해해나가는 과정을 정리했습니다.
+
+
+<br><br>
+
+# 순서
+
+### Introduction
+
+0. Basics
+1. 첫 번째 코틀린 애플리케이션
+2. 변수와 타입
+3. Input/Output
+
+<br>
+
+### Flow Control
+
+1. if
+2. when
