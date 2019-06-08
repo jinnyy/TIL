@@ -14,7 +14,7 @@
 
 # 순서
 
-### Introduction
+### 00. Introduction
 
 0. Basics
 1. 첫 번째 코틀린 애플리케이션
@@ -23,7 +23,7 @@
 
 <br>
 
-### Flow Control
+### 01. Flow Control
 
 1. if
 2. when
