@@ -143,6 +143,15 @@ fun main(args: Array<String>) {
 }
 ```
 
+<br><br><br>
+
+
+# 3. while loop
+
+java의 사용방법과 다르지 않다.
+
+
+
 <br><br><br><br>
 
 
