@@ -195,7 +195,26 @@ for (i in 5 downTo 1 step 2) print(i)
 
 숫자 사이에 `...`을 사용하거나, `downTo` 키워드를 사용해 큰 숫자에서 작은 숫자 순으로 for문을 실행할 수 있다. `step` 키워드를 사용하면 커지거나 작아지는 간격을 조절할 수 있다.
 
+<br><br>
 
+## Iterate through an Array
+
+
+```kotlin
+
+fun main(args: Array<String>) {
+
+
+   var language = arrayOf("Ruby", "Koltin", "Python" "Java")
+
+
+   for (item in language)
+
+       println(item)
+
+}
+
+```
 
 
 <br><br><br><br>
