@@ -217,6 +217,36 @@ fun main(args: Array<String>) {
 ```
 
 
+아래와 같이 `.indices` 를 이용해서 인덱스를 탐색하는 것도 가능하다.
+
+
+```kotlin
+
+fun main(args: Array<String>) {
+
+
+   var language = arrayOf("Ruby", "Koltin", "Python", "Java")
+
+
+   for (item in language.indices) {
+
+
+       // printing array elements having even index only
+
+       if (item%2 == 0)
+
+           println(language[item])
+
+   }
+
+}
+
+```
+
+
+
+
+
 <br><br><br><br>
 
 
