@@ -244,6 +244,28 @@ fun main(args: Array<String>) {
 ```
 
 
+## Iterate through a String
+
+
+```kotlin
+
+fun main(args: Array<String>) {
+
+
+   var text= "Kotlin"
+
+
+   for (letter in text) {
+
+       println(letter)
+
+   }
+
+}
+
+```
+
+
 
 
 
