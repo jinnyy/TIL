@@ -266,6 +266,16 @@ fun main(args: Array<String>) {
 ```
 
 
+<br><br><br>
+
+
+
+# 5. Tail Recursion
+
+
+`tailrec`이라는 키워드를 이용해서 tail recursion을 하도록 컴파일러에게 명령할 수 있다. 이 키워드로 recursion을 최적화할 수 있다.
+
+
 
 
 
