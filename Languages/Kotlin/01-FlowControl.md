@@ -276,6 +276,25 @@ fun main(args: Array<String>) {
 `tailrec`이라는 키워드를 이용해서 tail recursion을 하도록 컴파일러에게 명령할 수 있다. 이 키워드로 recursion을 최적화할 수 있다.
 
 
+```kotlin
+
+fun main(args: Array<String>) {
+
+   val number = 5
+
+   println("Factorial of $number = ${factorial(number)}")
+
+}
+
+
+tailrec fun factorial(n: Int, run: Int = 1): Long {
+
+   return if (n == 1) run.toLong() else factorial(n-1, run*n)
+
+}
+
+```
+
 
 
 
