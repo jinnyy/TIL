@@ -296,6 +296,12 @@ tailrec fun factorial(n: Int, run: Int = 1): Long {
 ```
 
 
+> 참고
+
+> Tail Recursion이란?
+
+> * https://namu.wiki/w/재귀함수
+
 
 
 <br><br><br><br>
