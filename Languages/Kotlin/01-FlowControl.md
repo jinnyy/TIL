@@ -299,7 +299,7 @@ tailrec fun factorial(n: Int, run: Int = 1): Long {
 > 참고
 > Tail Recursion이란?
 > * https://namu.wiki/w/재귀함수
-
+> * https://velog.io/@yesdoing/꼬리-물기-최적화Tail-Call-Optimization란-2yjnslo7sr
 
 
 <br><br><br><br>
