@@ -27,3 +27,6 @@
 
 1. if
 2. when
+3. while
+4. for
+5. tail recursion
