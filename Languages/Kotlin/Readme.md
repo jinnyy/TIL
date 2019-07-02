@@ -31,3 +31,7 @@
 3. while
 4. for
 5. tail recursion
+
+<br>
+
+### 02. Function
