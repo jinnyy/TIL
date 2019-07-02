@@ -11,7 +11,7 @@
 * 다른 프로그래밍 언어를 알고 있다는 전제 하에 새로운 언어의 문법을 배운다는 것을 주된 목표로 하고 있습니다.
 
 
-<br><br>
+<br><br><br>
 
 # 순서
 
@@ -26,11 +26,7 @@
 
 ### 01. Flow Control
 
-1. if
-2. when
-3. while
-4. for
-5. tail recursion
+if, when, while, for, tail recursion
 
 <br>
 
