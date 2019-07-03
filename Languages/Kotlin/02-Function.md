@@ -86,6 +86,48 @@ fun getName(firstName: String, lastName: String): String = "$firstName $lastName
 John Doe
 ```
 
+<br><br><br>
+
+
+### 3. Infix Notation
+
+함수에서 Infix Notation은 다음과 같은 표현을 의미한다.
+
+```kotlin
+a or b  // a.or(b)
+a and b // a.and(b)
+```
+
+이런 표현을 유저가 정의한 함수에서도 사용할 수 있다.
+`infix`라는 키워드를 함수를 정의할 때 앞에 붙여주면 infix notation으로 사용할 수 있는 함수로 정의된다.
+예시로 확인하는 것이 이해가 더 빠르다.
+
+```kotlin
+class Structure() {
+    infix fun createPyramid(rows: Int) {
+        var k = 0
+        for (i in 1..rows) {
+            k = 0
+            for (space in 1..rows-i) {
+                print("  ")
+            }
+            while (k != 2*i-1) {
+                print("* ")
+                ++k
+            }
+            println()
+        }
+    }
+}
+fun main(args: Array<String>) {
+    val p = Structure()
+    p createPyramid 4       // p.createPyramid(4)
+}
+```
+
+위와 같이 createPyramid라는 함수를 infix notation으로 사용할 수 있게 되었다.
+
+
 <br><br><br><br>
 
 
