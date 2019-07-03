@@ -89,7 +89,8 @@ John Doe
 <br><br><br>
 
 
-### 3. Infix Notation
+
+## 3. Infix Notation
 
 함수에서 Infix Notation은 다음과 같은 표현을 의미한다.
 
@@ -125,7 +126,7 @@ fun main(args: Array<String>) {
 }
 ```
 
-위와 같이 createPyramid라는 함수를 infix notation으로 사용할 수 있게 되었다.
+위와 같이 createPyramid라는 함수를 infix notation으로 사용할 수 있다.
 
 
 <br><br><br><br>
