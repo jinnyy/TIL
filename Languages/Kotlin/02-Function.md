@@ -128,6 +128,63 @@ fun main(args: Array<String>) {
 
 위와 같이 createPyramid라는 함수를 infix notation으로 사용할 수 있다.
 
+<br><br><br>
+
+## 4. Default and Named Arguments
+default와 named argument는 다른 언어들에서도 제공하는 문법이다.
+함수를 정의할 때 argument에 dafault 값을 지정하거나 이름(함수 내부적으로 사용되는 변수명)을 부여할 수 있다.
+
+### 4-1) Default Argument
+
+```kotlin
+fun displayBorder(character: Char = '=', length: Int = 15) {
+    for (i in 1..length) {
+        print(character)
+    }
+}
+fun main(args: Array<String>) {
+    println("Output when no argument is passed:")
+    displayBorder()
+    println("\n\n'*' is used as a first argument.")
+    println("Output when first argument is passed:")
+    displayBorder('*')
+    println("\n\n'*' is used as a first argument.")
+    println("5 is used as a second argument.")
+    println("Output when both arguments are passed:")
+    displayBorder('*', 5)
+}
+```
+
+output
+```
+Output when no argument is passed:
+===============
+
+'*' is used as a first argument.
+Output when first argument is passed:
+***************
+
+'*' is used as a first argument.
+5 is used as a second argument.
+Output when both arguments are passed:
+*****
+```
+
+
+### 4-2) Named Argument
+
+```kotlin
+fun displayBorder(character: Char = '=', length: Int = 15) {
+    for (i in 1..length) {
+        print(character)
+    }
+}
+fun main(args: Array<String>) {
+    displayBorder(length = 5)
+}
+```
+
+
 
 <br><br><br><br>
 
@@ -137,3 +194,4 @@ fun main(args: Array<String>) {
 * https://www.programiz.com/kotlin-programming/functions
 * https://kotlinlang.org/api/latest/jvm/stdlib/
 * https://www.programiz.com/kotlin-programming/infix-notation
+* https://www.programiz.com/kotlin-programming/default-named-arguments
