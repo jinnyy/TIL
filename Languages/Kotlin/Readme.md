@@ -31,3 +31,4 @@ if, when, while, for, tail recursion
 <br>
 
 ### 02. Function
+함수의 종류
