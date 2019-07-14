@@ -4,6 +4,7 @@ Today I Learned
 <br><br>
 
 ## Contents
+* Algorithm
 * Languages
   - Kotlin
 
