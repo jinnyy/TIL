@@ -28,6 +28,11 @@
 
 ## NP-Hard와 NP-Complete
 
+* `NP-Hard`: 임의의 문제를 다항식 시간 내에 'A' 문제로 환원(reduction 또는 transformation)할 수 있는 경우, 이 'A'문제를 'NP-난해(NP-hard) 문제'라고 부른다.
+  - `NP-Hard` 문제는 `NP` 문제보다 어렵거나 같다.
+  - 환원: 쉬운 문제에서 어려운 문제로 바꾼다. (쉬운 문제 B를 위해서 어려운 문제 A라는 문제 해결의 바탕이 되는 개념을 사용한다)
+  - [예] 곱셈(쉬운 문제)과 덧셈(어려운 문제)
+    - 쉬운 문제(곱셈)을 해결하기 위해 어려운 문제(덧셈)으로 환원해서 답을 구한다.
 * `NP-Hard`이면서 `NP`이면 `NP-Complete`이다.
 
 
@@ -51,3 +56,4 @@
   - https://namu.wiki/w/P-NP%문제
 * 블로그
   - https://zeddios.tistory.com/92
+  - https://wkdtjsgur100.github.io/P-NP/
