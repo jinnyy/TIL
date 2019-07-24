@@ -4,7 +4,9 @@ Today I Learned
 <br><br>
 
 ## Contents
-* Algorithm
+* Computer Science
+  - Algorithm
+  - Computer Network
 * Languages
   - Kotlin
 
