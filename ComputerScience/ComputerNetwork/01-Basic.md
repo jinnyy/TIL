@@ -255,6 +255,81 @@
   </tr>
 </table>
 
+<br><br>
+
+
+
+# 프로토콜
+
+* 데이터 통신을 할 때 계층마다 사용하는 프로토콜이 다르다.
+* 하위 계층 프로토콜이 상위 계층 프로토콜에 데이터를 전송할 수 있도록 `인터페이스`가 필요하다.
+* `프로토콜군(Protocol Suite)`: 어느 프로토콜을 사용하는지에 따라 7계층에서 1계층까지 사용하는 프로토콜이 정해짐
+  - 각각의 계층에서 사용되는 프로토콜을 통합한 것
+* 데이터 통신은 같은 프로토콜군을 사용하는 컴퓨터나 기기끼리만 가능
+
+### 프로토콜이 결정하는 것
+* 데이터의 내용
+* 헤더(어떤 헤더를 붙일지)
+* 데이터를 주고받는 순서
+* 데이터를 받았을 때 처리 순서 등
+
+TCP/IP 프로토콜군이 인터넷에서 사용되는 사실표준이다.
+
+<br><br>
+
+
+
+# TCP/IP 모델
+IETF라는 단체의 RFC에 의해 정해져 있는 것이 TCP/IP 프로토콜군이고 TCP/IP 모델이 베이스가 되어 만들어진 것이다.
+
+<table align=center>
+  <tr>
+    <th colspan="2">TCP/IP 모델</th>
+    <th colspan="2">OSI 참조 모델</th>
+    <th>프로토콜</th>
+  </tr>
+  <tr>
+    <td rowspan="3">4계층</td>
+    <td rowspan="3">애플리케이션 계층</td>
+    <td>7계층</td>
+    <td>응용 계층</td>
+    <td rowspan="3">HTTP(홈페이지 열람), FTP(파일 전송), SMTP(메일 송수신) 등</td>
+  </tr>
+  <tr>
+    <td>6계층</td>
+    <td>표현 계층</td>
+  </tr>
+  <tr>
+    <td>5계층</td>
+    <td>세션 계층</td>
+  </tr>
+  <tr>
+    <td>3계층</td>
+    <td>트랜스포트 계층</td>
+    <td>4계층</td>
+    <td>전송 계층</td>
+    <td>TCP, UDP</td>
+  </tr>
+  <tr>
+    <td>2계층</td>
+    <td>인터넷 계층</td>
+    <td>3계층</td>
+    <td>네트워크 계층</td>
+    <td>IP(Internet Protocol), ARP((Address Resolution Protocol)</td>
+  </tr>
+  <tr>
+    <td rowspan="2">1계층</td>
+    <td rowspan="2">인터페이스 계층</td>
+    <td>2계층</td>
+    <td>데이터링크 계층</td>
+    <td>이더넷, 프레임 릴레이, PPP(Point-to-Point Protocol) 등</td>
+  </tr>
+  <tr>
+    <td>1계층</td>
+    <td>물리 계층</td>
+  </tr>
+</table>
+
 
 
 <br><br><br>
