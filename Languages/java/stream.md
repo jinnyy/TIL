@@ -13,9 +13,9 @@
 <br>
 
 #### 사용 과정
-1. [생성하기](https://oss.navercorp.com/yeonjin-kim0309/study-archive/blob/master/language/java/stream.md#1-생성하기) : 스트림 인스턴스 생성
-2. [가공하기](https://oss.navercorp.com/yeonjin-kim0309/study-archive/blob/master/language/java/stream.md#2-가공하기) : 필터링(filtering) 및 맵핑(mapping) 등 원하는 결과를 만들어가는 중간 작업(intermediate operations)
-3. [결과 만들기](https://oss.navercorp.com/yeonjin-kim0309/study-archive/blob/master/language/java/stream.md#3-결과-만들기) : 최종적으로 결과를 만들어내는 작업(terminal operations)
+1. [생성하기](#1-생성하기) : 스트림 인스턴스 생성
+2. [가공하기](#2-가공하기) : 필터링(filtering) 및 맵핑(mapping) 등 원하는 결과를 만들어가는 중간 작업(intermediate operations)
+3. [결과 만들기](#3-결과-만들기) : 최종적으로 결과를 만들어내는 작업(terminal operations)
 
 <br><br><br><br><br>
 
