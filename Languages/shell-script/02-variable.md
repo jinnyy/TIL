@@ -13,7 +13,7 @@ echo $MY_MESSAGE
 <br>
 
 
-## expr
+## (1) expr
 
 - `expr`로 숫자 타입 값들을 연산할 수 있다. (string 안 됨)
 
@@ -30,7 +30,7 @@ expr $X + 1
 <br>
 
 
-## read
+## (2) read
 
 - `read`로 키보드 input을 받아올 수 있다.
 - `read {변수명}` 형식으로 사용한다.
@@ -52,7 +52,7 @@ Hello (keyboard input) - hope you're well.
 <br>
 
 
-## Scope
+## (3) Scope
 - Bourne shell의 변수는 선언(declare)될 필요가 없다. (C와 같은 언어와는 달리)
 - 선언되지 않은 변수에 접근하려고 하면 empty string("")을 반환받는다. (에러 x)
 	- :warning 버그 조심!
@@ -60,14 +60,14 @@ Hello (keyboard input) - hope you're well.
 <br>
 
 
-## source
+## (4) source
 - 작성한 스크립트로부터 환경 변화를 만들어내고 싶다면, 스크립트(코드)를 `source`해야 한다.
 		- `.`(dot) command로 스크립트를 source할 수 있다.
 
 <br>
 
 
-## {}
+## (5) {}
 
 - 문자열 안에서 `{}`(curly bracket)을 이용하면 변수에 저장된 문자열과 다른 문자열을 이어붙여서 새로운 문자열을 만들 수 있다.
 
@@ -86,7 +86,8 @@ touch  "${USER_NAME}_file"
 
 
 
-<br><br>
+<br><br><br><br><br>
+
 
 
 ## 출처
