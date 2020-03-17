@@ -21,6 +21,7 @@ Introduction to Spring Framework
 <br><br><br>
 
 ## 1. Core Container
+Core, Beans, Context, and Expression Language modules
 
 * Core and Beans (modules)
 * Context (module)
