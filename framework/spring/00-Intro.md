@@ -2,10 +2,9 @@
 Introduction to Spring Framework
 
 <br><br><br>
-<br><br><br>
+<br><br>
 
 
-<br>
 
 ## Modules
 
@@ -13,14 +12,14 @@ Introduction to Spring Framework
   <img src="https://docs.spring.io/spring/docs/3.0.x/spring-framework-reference/html/images/spring-overview.png" />
 </p>
 
-* Core Container
-* Data Access/Integration
-* Web
-* AOP (Aspect Oriented Programming)
-* Instrumentation
-* Test
+* [Core Container](#1-core-container)
+* [Data Access/Integration](#2-data-accessintegration)
+* [Web](#3-web)
+* [AOP (Aspect Oriented Programming)](#4-aop-aspect-oriented-programming)
+* [Instrumentation](#5-instrumentation)
+* [Test](#6-test)
 
-<br>
+<br><br><br>
 
 ## 1. Core Container
 ## 2. Data Access/Integration
