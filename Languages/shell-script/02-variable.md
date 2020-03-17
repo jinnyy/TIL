@@ -56,19 +56,31 @@ Hello (keyboard input) - hope you're well.
 - Bourne shell의 변수는 선언(declare)될 필요가 없다. (C와 같은 언어와는 달리)
 - 선언되지 않은 변수에 접근하려고 하면 empty string("")을 반환받는다. (에러 x)
 	- :warning 버그 조심!
-- source
-	- 작성한 스크립트로부터 환경 변화를 만들어내고 싶다면, 스크립트(코드)를 `source`해야 한다.
+
+<br>
+
+
+## source
+- 작성한 스크립트로부터 환경 변화를 만들어내고 싶다면, 스크립트(코드)를 `source`해야 한다.
 		- `.`(dot) command로 스크립트를 source할 수 있다.
+
+<br>
+
+
+## {}
+
 - 문자열 안에서 `{}`(curly bracket)을 이용하면 변수에 저장된 문자열과 다른 문자열을 이어붙여서 새로운 문자열을 만들 수 있다.
-	``` shell
-	#!/bin/sh  
-	echo  "What is your name?"  
-	read USER_NAMEecho  "Hello $USER_NAME"  
-	echo  "I will create you a file called ${USER_NAME}_file"  
-	touch  "${USER_NAME}_file"
-	```
-	> #### 참고
-	> - **touch**: 리눅스에서 파일을 생성하거나 갱신하는 명령어
+
+``` shell
+#!/bin/sh  
+echo  "What is your name?"  
+read USER_NAMEecho  "Hello $USER_NAME"  
+echo  "I will create you a file called ${USER_NAME}_file"  
+touch  "${USER_NAME}_file"
+```
+
+> #### 참고
+> - **touch**: 리눅스에서 파일을 생성하거나 갱신하는 명령어
 
 
 
