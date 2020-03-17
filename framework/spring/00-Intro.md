@@ -15,25 +15,60 @@ Introduction to Spring Framework
 * [Core Container](#1-core-container)
 * [Data Access/Integration](#2-data-accessintegration)
 * [Web](#3-web)
-* [AOP (Aspect Oriented Programming)](#4-aop-aspect-oriented-programming)
-* [Instrumentation](#5-instrumentation)
-* [Test](#6-test)
+* [AOP (Aspect Oriented Programming and Instrumentation)](#4-aop-aspect-oriented-programming-and-instrumentation)
+* [Test](#5-test)
 
 <br><br><br>
 
 ## 1. Core Container
+
+* Core and Beans (modules)
+* Context (module)
+* Expression Language (module)
+
+<br>
+
+
 ## 2. Data Access/Integration
+JDBC, ORM, OXM, JMS and Transaction modules
+
+* JDBC
+* ORM
+* OXM
+* JMS
+* Transaction
+
+<br>
+
+
 ## 3. Web
-## 4. AOP (Aspect Oriented Programming)
-## 5. Instrumentation
-## 6. Test
+Web, Web-Servlet, Web-Struts, and Web-Portlet modules
+* Web
+* Web-Servlet
+* Web-Struts
+* Web-Portlet
+
+<br>
+
+
+## 4. AOP (Aspect Oriented Programming) and Instrumentation
+* separate Aspects module
+* Instrumentation module
+
+
+<br>
+
+
+## 5. Test
+supports the testing of Spring components with JUnit or TestNG
+
+
+<br><br><br>
+<br><br>
 
 
 
-
-<br><br><br><br><br>
 
 ## References
 
-* https://www.baeldung.com/rest-assured-tutorial
 * https://docs.spring.io/spring/docs/3.0.x/spring-framework-reference/html/overview.html
