@@ -145,12 +145,12 @@ public  class  SchedulerApplication {
 ``` java
 @Scheduled(fixedRateString = "5", initialDelay = 3000)
 private  void  scheduleTest() {
-	logger.error("hello jeong-pro"); 
+	logger.error("hello world"); 
 }
 ```
 
 - 주기적인 작업이 있을 때 사용
-- 예시의 경우 3초의 대기시간(initialDelay) 후에 5ms(fixedRate)마다 "hello jeong-pro"라는 로그를 찍는 작업을 스케줄러가 수행해줌
+- 예시의 경우 3초의 대기시간(initialDelay) 후에 5ms(fixedRate)마다 "hello world"라는 로그를 찍는 작업을 스케줄러가 수행
 
 
 <br><br><br>
