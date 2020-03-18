@@ -1,4 +1,4 @@
-# 2. 변수
+# 변수
 
 - 타입을 지정하지 않는다.
 - string, integer, real number 등 다양한 타입을 store할 수 있다.
