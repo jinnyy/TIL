@@ -103,7 +103,7 @@ public ResponseEntity<?> someMethod(@RequestParam String name) {
 <br><br><br>
 
 
-# 데이터 접근
+# 3. 데이터 접근
 
 ### @Service
 - Service Class 에서 쓰인다
@@ -120,7 +120,7 @@ public ResponseEntity<?> someMethod(@RequestParam String name) {
 <br><br><br>
 
 
-# 성능 개선 및 기타
+# 4. 성능 개선 및 기타
 
 ### @Async
 - method가 비동기방식으로 처리됨
