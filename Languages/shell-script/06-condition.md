@@ -45,6 +45,47 @@ fi
 	fi
 	```
 
+<br><br><br>
+
+
+
+## Case
+다른 언어들의 case문과 같은 기능을 한다.
+
+
+``` sh
+case {변수} in
+	{경우})
+		{명령문}
+		;;
+	{경우})
+		{명령문}
+		;;
+esac
+```
+
+#### 예시
+``` sh
+echo "Please talk to me ..."
+while :
+do
+  read INPUT_STRING
+  case $INPUT_STRING in
+	hello)
+		echo "Hello yourself!"
+		;;
+	bye)
+		echo "See you again!"
+		break
+		;;
+	*)
+		echo "Sorry, I don't understand"
+		;;
+  esac
+done
+echo 
+echo "That's all folks!"
+```
 
 <br><br><br><br><br>
 
@@ -52,3 +93,6 @@ fi
 
 ## 출처
 - [https://www.shellscript.sh/test.html](https://www.shellscript.sh/test.html)
+- [https://www.shellscript.sh/case.html](https://www.shellscript.sh/case.html)
+- [https://jupiny.com/2017/07/10/shell-script-basic-3/](https://jupiny.com/2017/07/10/shell-script-basic-3/)
+- [https://ktdsoss.tistory.com/134](https://ktdsoss.tistory.com/134)
