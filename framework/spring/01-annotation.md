@@ -7,6 +7,7 @@
 # 1. 의존성 주입
 
 ### @Required
+[source code](https://github.com/spring-projects/spring-framework/blob/013ec6abdb65c23d3e1be2dc6141eac2130d0503/spring-beans/src/main/java/org/springframework/beans/factory/annotation/Required.java)
 ``` java
 public class TestBean {
 	@Required
@@ -21,6 +22,7 @@ public class TestBean {
 - 설정하지 않을 경우 빈 생성시 예외를 발생시킴
 
 ### @Autowired
+[source code](https://github.com/spring-projects/spring-framework/blob/013ec6abdb65c23d3e1be2dc6141eac2130d0503/spring-beans/src/main/java/org/springframework/beans/factory/annotation/Autowired.java)
 ``` java
 // required : 필수인지 여부
 @Autowired(required=false)
@@ -41,6 +43,7 @@ private Test test;
 
 
 ### @Inject
+[참고](https://docs.oracle.com/javaee/6/api/javax/inject/Inject.html)
 - Autowired 어노테이션과 비슷한 역할
 - Java 에서 지원하는 어노테이션
 - 필드 , 생성자 , 메소드에서 사용
@@ -51,24 +54,32 @@ private Test test;
 # 2. 컨트롤러
 
 ### @Controller
+[source code](https://github.com/spring-projects/spring-framework/blob/master/spring-context/src/main/java/org/springframework/stereotype/Controller.java)
 - 스프링의 Controller라는 것을 명시
 - Spring MVC에서 **Controller 클래스**에 사용됨
 
 ### @RestController
+[source code](https://github.com/spring-projects/spring-framework/blob/master/spring-web/src/main/java/org/springframework/web/bind/annotation/RestController.java)
 - @Controller나 @RestController 중 하나를 **Controller 클래스**에 명시
 - Spring에서 Controller 중 View로 응답하지 않는, 컨트롤러를 의미
 - 이 어노테이션이 적혀있는 컨트롤러의 메서드는 HttpResponse로 바로 응답이 가능
 	- @ResponseBody 역할을 자동적으로 해줌
 
 ### @RequestMapping
+[source code](https://github.com/spring-projects/spring-framework/blob/master/spring-web/src/main/java/org/springframework/web/bind/annotation/RequestMapping.java)
 ``` java
 @RequestMapping(value = "/path/name", method = RequestMethod.GET)
 ```
 - Spring의 컨트롤러 혹은 그 메서드의 URI를 정의
 - GET, POST, PATCH, PUT, DELETE 등 요청 받는 형식도 정의
 - @GetMapping, @PostMapping 등 메소드에 따른 annotation도 사용가능하다.
+	- [GetMapping.java](https://github.com/spring-projects/spring-framework/blob/master/spring-web/src/main/java/org/springframework/web/bind/annotation/GetMapping.java)
+	- [PostMapping.java](https://github.com/spring-projects/spring-framework/blob/master/spring-web/src/main/java/org/springframework/web/bind/annotation/PostMapping.java)
+	- [PutMapping.java](https://github.com/spring-projects/spring-framework/blob/master/spring-web/src/main/java/org/springframework/web/bind/annotation/PutMapping.java)
+	- [DeleteMapping.java](https://github.com/spring-projects/spring-framework/blob/master/spring-web/src/main/java/org/springframework/web/bind/annotation/DeleteMapping.java)
 
 ### @PathVariable
+[source code](https://github.com/spring-projects/spring-framework/blob/master/spring-web/src/main/java/org/springframework/web/bind/annotation/PathVariable.java)
 ``` java
 @RequestMapping(value = "/some/path/{id}", method = RequestMethod.GET)  
 public ResponseEntity<?> someMethod(@PathVariable int id) {
@@ -79,6 +90,7 @@ public ResponseEntity<?> someMethod(@PathVariable int id) {
 
 
 ### @RequestBody
+[source code](https://github.com/spring-projects/spring-framework/blob/master/spring-web/src/main/java/org/springframework/web/bind/annotation/RequestBody.java)
 ``` java
 @RequestMapping(value = "/book", method = RequestMethod.POST)  
 public ResponseEntity<?> someMethod(@RequestBody Book book) {
@@ -89,6 +101,7 @@ public ResponseEntity<?> someMethod(@RequestBody Book book) {
 
 
 ### @RequestParam
+[source code](https://github.com/spring-projects/spring-framework/blob/master/spring-web/src/main/java/org/springframework/web/bind/annotation/RequestParam.java)
 - ?name=hello 와 같은 쿼리 파라미터를 파싱
 ``` java
 @RequestMapping(value = "/search/movie")
@@ -97,6 +110,7 @@ public ResponseEntity<?> someMethod(@RequestParam String name) {
 ```
 
 ### @ResponseBody
+[source code](https://github.com/spring-projects/spring-framework/blob/master/spring-web/src/main/java/org/springframework/web/bind/annotation/ResponseBody.java)
 - HttpMessageConverter 를 이용하여 JSON 혹은 xml 로 요청에 응답할수 있게 해주는 어노테이션
 - 이미 RestController 어노테이션이 붙어 있다면, 쓸 필요가 없다
 
@@ -106,14 +120,17 @@ public ResponseEntity<?> someMethod(@RequestParam String name) {
 # 3. 데이터 접근
 
 ### @Service
+[source code](https://github.com/spring-projects/spring-framework/blob/master/spring-context/src/main/java/org/springframework/stereotype/Service.java)
 - Service Class 에서 쓰인다
 - 비즈니스 로직을 수행하는 클래스라는 것을 나타냄
 
 ### @Repository
+[source code](https://github.com/spring-projects/spring-framework/blob/master/spring-context/src/main/java/org/springframework/stereotype/Repository.java)
 - DAO class 에서 쓰인다
 	- 데이터베이스에 접근하는 메소드가 있는 클래스에서 쓰임
 
 ### @Transactional
+[source code](https://github.com/spring-projects/spring-framework/blob/8a57997d2106641f48ec3760b966e5721491e63a/spring-tx/src/main/java/org/springframework/transaction/annotation/Transactional.java)
 - 메소드가 transactional하게 동작하도록 한다.
 - class에 적용하면 해당 클래스 내부의 모든 메소드가 transactional하게 동작한다.
 
@@ -123,6 +140,7 @@ public ResponseEntity<?> someMethod(@RequestParam String name) {
 # 4. 성능 개선 및 기타
 
 ### @Async
+[source code](https://github.com/spring-projects/spring-framework/blob/3a0f309e2c9fdbbf7fb2d348be861528177f8555/spring-context/src/main/java/org/springframework/scheduling/annotation/Async.java)
 - method가 비동기방식으로 처리됨
 - public 메소드에만 적용해야한다
 - 같은 객체 내의 method끼리 호출시에는 @Async가 설정되어있어도 비동기처리가 되지 않음
@@ -131,6 +149,8 @@ public ResponseEntity<?> someMethod(@RequestParam String name) {
 	- 메소드 위에 @Async annotation만 추가
 
 ### @Scheduled
+[source code](https://github.com/spring-projects/spring-framework/blob/3a0f309e2c9fdbbf7fb2d348be861528177f8555/spring-context/src/main/java/org/springframework/scheduling/annotation/Scheduled.java)
+
 1. @EnableScheduling Annotation을 적어서 스케줄링을 사용한다는 것을 알린다.  
 ``` java
 @EnableScheduling
@@ -165,3 +185,5 @@ private  void  scheduleTest() {
 - [https://springboot.tistory.com/38](https://springboot.tistory.com/38)
 - [http://dveamer.github.io/java/SpringAsync.html](http://dveamer.github.io/java/SpringAsync.html)
 - [https://jeong-pro.tistory.com/186](https://jeong-pro.tistory.com/186)
+- [https://github.com/spring-projects/spring-framework](https://github.com/spring-projects/spring-framework)
+- [https://docs.oracle.com/javaee/6/api/javax/inject/Inject.html](https://docs.oracle.com/javaee/6/api/javax/inject/Inject.html)
