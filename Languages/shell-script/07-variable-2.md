@@ -120,3 +120,4 @@
 
 ## 출처
 - [https://www.shellscript.sh/variables2.html](https://www.shellscript.sh/variables2.html)
+- [https://www.shellscript.sh/variables3.html](https://www.shellscript.sh/variables3.html)
