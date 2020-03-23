@@ -21,6 +21,8 @@ public @interface InsertIntData {
 	int data() default 0;  
 }
 ```
+- interface에 정의 후 class로 구현해야 한다.
+
 
 어노테이션을 사용하는 클래스
 - 변수 위에 `@어노테이션 이름` 형식으로 어노테이션을 사용
