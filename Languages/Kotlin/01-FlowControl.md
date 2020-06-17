@@ -128,7 +128,7 @@ when (x) {
 }
 ```
 
-codition 부분에 expression을 사용하는 것도 가능하다. (값을 얻어내기만 하면 되는듯하다)
+condition 부분에 expression을 사용하는 것도 가능하다. (값을 얻어내기만 하면 되는듯하다)
 ```kotlin
 fun main(args: Array<String>) {
 
